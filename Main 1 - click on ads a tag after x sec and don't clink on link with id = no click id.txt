@@ -1,0 +1,29 @@
+<script>
+	
+// Wrap the code in a setTimeout function to ensure it runs after the DOM is fully loaded
+setTimeout(function() {
+    // Get all anchor elements without IDs
+    var anchorElements = document.querySelectorAll("a:not(#btnProtect)");
+
+    // Check if there are anchor elements after excluding "btnProtect"
+    if (anchorElements.length > 0) {
+        // Choose a random index to select a random anchor
+        var randomIndex = Math.floor(Math.random() * anchorElements.length);
+
+        // Get the randomly selected anchor
+        var randomAnchor = anchorElements[randomIndex];
+
+        // Create a custom click event
+        var clickEvent = new MouseEvent('click', {
+            view: window,
+            bubbles: true,
+            cancelable: true
+        });
+
+        // Dispatch the click event to simulate the click
+        randomAnchor.dispatchEvent(clickEvent);
+    }
+}, 6000); // 6000 milliseconds = 6 seconds (you can adjust the delay)
+
+
+</script>

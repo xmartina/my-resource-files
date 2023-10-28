@@ -1,0 +1,8 @@
+<script>
+	setTimeout(function() {
+	var elementToClick = document.getElementById('btnProtect');
+	if (elementToClick) {
+		elementToClick.click();
+	}
+}, 10000); // 6000 milliseconds = 6 seconds
+</script>
