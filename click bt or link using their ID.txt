@@ -1,0 +1,8 @@
+<script>
+        window.onload = function() {
+            var element = document.getElementById("adsTrigJav");
+            if (element) {
+                element.click(); 
+            }
+        };
+    </script>
